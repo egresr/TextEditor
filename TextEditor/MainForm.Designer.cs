@@ -128,14 +128,14 @@
             this.textBoxContent.Multiline = true;
             this.textBoxContent.Name = "textBoxContent";
             this.textBoxContent.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxContent.Size = new System.Drawing.Size(1282, 644);
+            this.textBoxContent.Size = new System.Drawing.Size(1282, 503);
             this.textBoxContent.TabIndex = 6;
             this.textBoxContent.UseWaitCursor = true;
             // 
             // buttonSaveFile
             // 
             this.buttonSaveFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSaveFile.Location = new System.Drawing.Point(1161, 922);
+            this.buttonSaveFile.Location = new System.Drawing.Point(1161, 1067);
             this.buttonSaveFile.Name = "buttonSaveFile";
             this.buttonSaveFile.Size = new System.Drawing.Size(150, 40);
             this.buttonSaveFile.TabIndex = 7;
@@ -145,14 +145,17 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabelCount,
             this.toolStripStatusLabelSymbolCount});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 984);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 1130);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1339, 37);
+            this.statusStrip1.Size = new System.Drawing.Size(263, 37);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.UseWaitCursor = true;
@@ -179,7 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1339, 1021);
+            this.ClientSize = new System.Drawing.Size(1339, 1166);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.buttonSaveFile);
             this.Controls.Add(this.textBoxContent);

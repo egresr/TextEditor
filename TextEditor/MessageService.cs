@@ -7,12 +7,6 @@ using System.Windows.Forms;
 
 namespace TextEditor
 {
-    public interface IMessageService
-    {
-        void ShowMessage(string message);
-        void ShowExclamation(string exclamation);
-        void ShowError(string error);
-    }
 
     //objvljajutsja metody za kotorymy skryvajutsja realnye vyvody soobschenij,
     //no ljuboj klass kotoryj budet manipulirovat naschime interface ne budet
@@ -25,6 +19,15 @@ namespace TextEditor
 
     //V etom sluchae PRESENTER kotoryj ne imeet dostupa k view vospolzuetsja
     //INTERFACE dlja vyvoda preduprezhdenij ob oschibkach.
+
+    public interface IMessageService
+    {
+        void ShowMessage(string message);
+        void ShowExclamation(string exclamation);
+        void ShowError(string error);
+    }
+
+
     class MessageService: IMessageService
     {
         public void ShowMessage(string message)

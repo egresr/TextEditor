@@ -39,7 +39,10 @@ namespace TextEditor
             buttonOpenFile.Click += ButtonOpenFile_Click;
             buttonSaveFile.Click += ButtonSaveFile_Click;
             textBoxContent.TextChanged += TextBoxContent_TextChanged;
+            // Sobytie klick po knopke Auswahl
             buttonSelectFile.Click += ButtonSelectFile_Click;
+            // Sobytie ValueChanged
+            numericUpDownFont.ValueChanged += numFont_ValueChanged;
         }
 
         #region //Probros sobytij
@@ -81,18 +84,32 @@ namespace TextEditor
 
         #endregion //Realizacija interface iMainForm
 
+        #region // Vnutrennii elementy upravlenija
+        //obrabotchik sobytija klick po knopke Auswahl
         private void ButtonSelectFile_Click(object sender, EventArgs e)
         {
+            //obrabotchik vysyvaet standartnyj DIALOG dlja otkrytija faila
             OpenFileDialog dlg = new OpenFileDialog();
+            //i prostovljae v nem neobhodimye filtry
             dlg.Filter = "Textdateien|*.txt|Alle Dateien|*.*";
-
+            //esli polsovatel vybral fail i nazhal na opziju OK
             if(dlg.ShowDialog() == DialogResult.OK)
             {
+                //v tekstovoe pole v svojstvo TEXT vnositsja put k vybrannomu failu
                textBoxFilePath .Text = dlg.FileName;
-
+                // i srazu vyzyvaetsja sobytie otkrytija faila
                 if (FileOpenClick != null) FileOpenClick(this, EventArgs.Empty);
             }
         }
+
+        //obrabotchik vybora schrifta
+        private void numFont_ValueChanged(object sender, EventArgs e)
+        {
+            //pri izmenenii razmera schrifta, menjaetsja razmer schrifta v texte
+            textBoxContent.Font = new Font("Calibri", (float) numericUpDownFont.Value);
+        }
+        #endregion // Vnutrennii elementy upravlenija
+
 
     }
 }
