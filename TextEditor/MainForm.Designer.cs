@@ -75,7 +75,7 @@
             this.buttonSelectFile.Text = "Auswahl";
             this.buttonSelectFile.UseVisualStyleBackColor = true;
             this.buttonSelectFile.UseWaitCursor = true;
-            this.buttonSelectFile.Click += new System.EventHandler(this.button1_Click);
+
             // 
             // buttonOpenFile
             // 
@@ -204,8 +204,7 @@
             this.Name = "MainForm";
             this.Text = "Texteditor";
             this.UseWaitCursor = true;
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFont)).EndInit();
+
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
