@@ -40,7 +40,6 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelCount = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelSymbolCount = new System.Windows.Forms.ToolStripStatusLabel();
-            this.buttonTest = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFont)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +74,6 @@
             this.buttonSelectFile.Text = "Auswahl";
             this.buttonSelectFile.UseVisualStyleBackColor = true;
             this.buttonSelectFile.UseWaitCursor = true;
-
             // 
             // buttonOpenFile
             // 
@@ -177,21 +175,11 @@
             this.toolStripStatusLabelSymbolCount.Name = "toolStripStatusLabelSymbolCount";
             this.toolStripStatusLabelSymbolCount.Size = new System.Drawing.Size(0, 32);
             // 
-            // buttonTest
-            // 
-            this.buttonTest.Location = new System.Drawing.Point(712, 155);
-            this.buttonTest.Name = "buttonTest";
-            this.buttonTest.Size = new System.Drawing.Size(276, 55);
-            this.buttonTest.TabIndex = 8;
-            this.buttonTest.Text = "TEST";
-            this.buttonTest.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1339, 1021);
-            this.Controls.Add(this.buttonTest);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.buttonSaveFile);
             this.Controls.Add(this.textBoxContent);
@@ -204,7 +192,7 @@
             this.Name = "MainForm";
             this.Text = "Texteditor";
             this.UseWaitCursor = true;
-
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFont)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -226,7 +214,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelCount;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelSymbolCount;
-        private System.Windows.Forms.Button buttonTest;
     }
 }
 
